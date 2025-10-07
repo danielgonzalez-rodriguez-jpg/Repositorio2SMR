@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let  nombre , apellido1, apellido2, precio, cantidad;
+        nombre=prompt("Indica su nombre");
+        apellido1=prompt("Indica su primer apellido");
+        apellido2=prompt("Indica su segundo apellido");
+        let completo = nombre + " " + apellido1 + " " + apellido2;
+        document.write(completo);
+        document.write("<br>")
+        precio=prompt("Ingresa el precio");
+        cantidad=prompt("Ingresa la cantidad");
+        let abonar=precio - cantidad;
+        document.write("debe abonar" + abonar)
+    </script>
+</body>
+</html>

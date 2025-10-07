@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //Ejemplo 2:  Ingresa tres números por pantalla y di cuál es el número mayor.
+        let num1, num2, num3;
+        num1=prompt("Ingrese el primer numero: ")
+        num2=prompt("Ingrese el segundo numero: ")
+        num3=prompt("Ingrese el tercero numero: ")
+        if(num1 > num2 && num1 > num3)
+            document.write("el mayor es " + num1)
+        else
+            if(num2 > num1 && num2 > num3)
+                document.write("el mayor es " + num2)
+            else
+                if(num3 > num1 && num3 > num2)
+                    document.write("el mayor es " + num3)
+                else
+                    document.write("los numeros son iguales")
+        
+    </script>
+</body>
+</html>
