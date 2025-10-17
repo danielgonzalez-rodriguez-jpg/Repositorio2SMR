@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let num1 = parseFloat(prompt("Ingrese el primer número:"));
+let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+let opcion = prompt("Ingrese una opción (1. sumar, 2. restar, 3. multiplicar, 4. dividir):");
+let resultado;
+
+switch (opcion) {
+    case "1":
+    case "sumar":
+        resultado = num1 + num2;
+        document.write("La suma es: " + resultado);
+        break;
+
+    case "2":
+    case "restar":
+        resultado = num1 - num2;
+        document.write("La resta es: " + resultado);
+        break;
+
+    case "3":
+    case "multiplicar":
+        resultado = num1 * num2;
+        document.write("La multiplicación es: " + resultado);
+        break;
+
+    case "4":
+    case "dividir":
+        resultado = num1 / num2;
+        document.write("La división es: " + resultado);
+        break;
+
+    default:
+        document.write("Opción no válida");
+}
+    </script>
+</body>
+</html>

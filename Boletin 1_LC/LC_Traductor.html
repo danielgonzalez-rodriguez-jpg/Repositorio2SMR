@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let palabra = prompt("Ingrese una palabra (casa, mesa, perro, gato):");
+        let traduccion;
+        switch (palabra) {
+        case "casa":
+            traduccion = "house";
+            break;
+        case "mesa":
+            traduccion = "table";
+            break;
+        case "perro":
+            traduccion = "dog";
+            break;
+        case "gato":
+            traduccion = "cat";
+            break;
+        default:
+            traduccion = "Palabra no válida";
+}
+document.write("Traducción: " + traduccion);
+    </script>
+</body>
+</html>
