@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <h1>Cuestionario de información</h1>
+  <p>Por favor, rellene el siguiente cuestionario:</p>
+
+  <form action="#" method="post">
+
+    <b>Datos personales</b><br><br>
+
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre"><br><br>
+
+    <label>Edad:</label>
+    <input type="radio" id="edad1" name="edad" value="menos de 20">
+    <label for="edad1">menos de 20</label>
+    <input type="radio" id="edad2" name="edad" value="21 a 30">
+    <label for="edad2">de 21 a 30</label>
+    <input type="radio" id="edad3" name="edad" value="31 a 40">
+    <label for="edad3">de 31 a 40</label>
+    <input type="radio" id="edad4" name="edad" value="más de 40">
+    <label for="edad4">más de 40</label><br><br>
+
+    <label for="profesion">Profesión:</label>
+    <select id="profesion" name="profesion">
+      <option value="funcionario">Funcionario</option>
+      <option value="profesor">Profesor</option>
+      <option value="ingeniero">Ingeniero</option>
+      <option value="médico">Médico</option>
+      <option value="otro">Otro</option>
+    </select>
+
+    <br><br>
+    
+
+    <b>Datos de la vivienda</b><br><br>
+
+    <label>Número de dormitorios:</label>
+    <input type="radio" id="dorm1" name="dormitorios" value="1"><label for="dorm1">1</label>
+    <input type="radio" id="dorm2" name="dormitorios" value="2"><label for="dorm2">2</label>
+    <input type="radio" id="dorm3" name="dormitorios" value="3"><label for="dorm3">3</label>
+    <input type="radio" id="dorm4" name="dormitorios" value="4"><label for="dorm4">4</label>
+    <input type="radio" id="dorm5" name="dormitorios" value="5"><label for="dorm5">5</label><br><br>
+
+    <label for="tipo">Tipo de vivienda:</label>
+    <select id="tipo" name="tipo">
+      <option value="piso">Piso</option>
+      <option value="casa">Casa</option>
+      <option value="ático">Ático</option>
+      <option value="estudio">Estudio</option>
+    </select><br><br>
+
+    <label for="precio">Precio:</label>
+    <input type="number" id="precio" name="precio"> €<br><br>
+
+    <label for="zona">Zona:</label><br>
+    <select id="zona" name="zona" size="4" multiple>
+      <option value="centro">Centro</option>
+      <option value="nervion">Nervión</option>
+      <option value="triana">Triana</option>
+      <option value="macarena">Macarena</option>
+    </select><br><br>
+
+    <label>Extras (marque todos los que desee):</label><br>
+    <input type="checkbox" id="piscina" name="extras" value="Piscina"><label for="piscina">Piscina</label>
+    <input type="checkbox" id="jardin" name="extras" value="Jardín"><label for="jardin">Jardín</label>
+    <input type="checkbox" id="garaje" name="extras" value="Garaje"><label for="garaje">Garaje</label>
+    <input type="checkbox" id="sauna" name="extras" value="Sauna"><label for="sauna">Sauna</label><br><br>
+
+    <input type="submit" value="Enviar cuestionario">
+    <input type="reset" value="Borrar cuestionario">
+</body>
+</html>

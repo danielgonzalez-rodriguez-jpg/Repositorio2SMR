@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-align:center;">HOJA DE INSCRIPCIÓN</h1>
+  <h2 style="text-align:center;">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+
+  <form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset style="background-color:#cccccc;">
+      <legend><b>Datos Personales</b></legend>
+
+      Nombre:
+      <input type="text" name="nombre" placeholder="Introduzca su nombre">
+      Apellidos:
+      <input type="text" name="apellidos">
+      DNI:
+      <input type="text" name="dni" readonly><!-- readonly añadido -->
+      <br><br>
+
+      Localidad de Nacimiento:
+      <input type="text" name="localidad">
+      Provincia:
+      <select name="provincia">
+        <option value="huelva">Huelva</option>
+        <option value="sevilla">Sevilla</option>
+        <option value="cadiz">Cádiz</option>
+      </select>
+      Fecha de Nacimiento:
+      <input type="date" name="fecha"><br><br>
+
+      Dirección:
+      <input type="text" name="direccion" size="40">
+      Código Postal:
+      <input type="text" name="postal" placeholder="Ej: 21004"><!-- placeholder añadido -->
+      <br><br>
+
+      <!-- Nuevo campo tipo week -->
+      Semana de inscripción:
+      <input type="week" name="semana"><br><br>
+
+      <!-- Nuevo campo tipo range -->
+      Nivel de prioridad:<br>
+      <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+      <output>24</output><br><br>
+
+      <!-- Campo disabled -->
+      Comentarios (campo deshabilitado):
+      <input type="text" disabled placeholder="No editable"><br>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="background-color:#e8b894;">
+      <legend><b>Forma de Acceso</b></legend>
+      <input type="radio" name="acceso" value="cupo1"> Cupo 1 (Bachillerato)<br>
+      <input type="radio" name="acceso" value="cupo2"> Cupo 2 (Técnico)<br>
+      <input type="radio" name="acceso" value="cupo3"> Cupo 3 (Prueba de acceso)<br>
+    </fieldset>
+
+    <br>
+
+    <fieldset style="background-color:#b68b8b;">
+      <legend><b>Documentos Adjuntados</b></legend>
+      <input type="checkbox" name="documentos" value="dni"> Fotocopia DNI
+      <input type="checkbox" name="documentos" value="certificado"> Certificado Académico<br><br>
+      <input type="file" name="archivo">
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar inscripción">
+    <input type="reset" value="Borrar formulario">
+
+  </form>
+</body>
+</html>

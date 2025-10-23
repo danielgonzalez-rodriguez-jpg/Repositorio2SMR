@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Examen de HTML</h1>
+
+  <form action="#" method="post">
+
+    <fieldset>
+      <p><b>1. ¿Qué significa HTML?</b></p>
+      <input type="radio" name="p1" value="a"> Hypertext Markup Language<br>
+      <input type="radio" name="p1" value="b"> Hypermark Trade Language<br>
+      <input type="radio" name="p1" value="c"> Hyperspace Time Markup<br>
+      <input type="radio" name="p1" value="d"> Hypertext Media Language<br><br>
+
+      <b>2. ¿Cuál de los siguientes nombres no corresponde a un elemento HTML?</b>
+      <select name="p2">
+        <option value="script">SCRIPT</option>
+        <option value="div">DIV</option>
+        <option value="table">TABLE</option>
+        <option value="p">P</option>
+      </select><br><br>
+
+      <b>3. ¿Qué elemento permite crear un formulario en HTML?</b><br>
+      <!-- Añadido placeholder -->
+      <input type="text" name="p3" placeholder="Escriba la etiqueta del formulario"><br><br>
+
+      <b>4. ¿Cuáles de los siguientes elementos HTML permiten colocar un dato de tipo arbitrario?</b><br>
+      <input type="checkbox" name="p4" value="IMG"> IMG
+      <input type="checkbox" name="p4" value="EMBED"> EMBED
+      <input type="checkbox" name="p4" value="APPLET"> APPLET
+      <input type="checkbox" name="p4" value="OBJECT"> OBJECT<br><br>
+
+      <b>5. ¿Cuáles de los siguientes formatos de imagen son soportados por IMG?</b><br>
+      <select name="p5" size="3" multiple>
+        <option value="gif">GIF</option>
+        <option value="pcx">PCX</option>
+        <option value="tiff">TIFF</option>
+      </select><br><br>
+
+      <!-- Nuevo campo tipo week -->
+      <b>Seleccione la semana:</b>
+      <input type="week" name="semana"><br><br>
+
+      <!-- Nuevo campo tipo range -->
+      <b>Nivel de conocimiento (1-100):</b><br>
+      <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
+      <output>24</output><br><br>
+
+      <!-- Campo readonly -->
+      <b>Nota final (solo lectura):</b>
+      <input type="text" value="Pendiente de corrección" readonly><br><br>
+
+      <!-- Campo disabled -->
+      <b>Comentarios (deshabilitado):</b>
+      <input type="text" placeholder="Campo no editable" disabled>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Enviar examen">
+    <input type="reset" value="Borrar examen">
+
+  </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+    <fieldset>
+      <legend>Indique sus preferencias por favor</legend>
+
+      Elija una fecha:
+      <input type="date" name="fecha"><br>
+
+      Elija un fichero:
+      <input type="file" name="archivo"><br>
+
+      <input type="radio" name="processor" value="procesadoramd"> AMD
+      <input type="radio" name="processor" value="processadorintel_i5"> Intel i5
+      <input type="radio" name="processor" value="processadorintel_i7"> Intel i7
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+      <legend>Indique sus preferencias por favor</legend>
+
+      <input type="radio" name="asignatura" value="asignaturamatematicas"> Matemáticas
+      <input type="radio" name="asignatura" value="asignaturahistoria"> Historia
+      <input type="radio" name="asignatura" value="asignaturageografía"> Geografía
+      <input type="radio" name="asignatura" value="asignaturalengua"> Lengua
+      <br><br>
+
+      Nombre
+      <input type="text" name="name"><br>
+
+      Apellidos
+      <input type="text" name="lastname"><br>
+
+      Dirección
+      <input type="text" name="address"><br><br>
+
+      Elija un color:
+      <input type="color" name="color"><br>
+
+      <textarea rows="6" cols="59">Utilice este cuadro para escribir</textarea><br><br>
+
+      Elija una fecha:
+      <input type="date" name="fecha2"><br> 
+
+      <select name="language">
+        <option value="english">Inglés</option>
+        <option value="german">Alemán</option>
+        <option value="french">Francés</option>
+      </select><br>
+
+      Elija una hora:
+      <input type="time" name="hora"><br>
+
+      Elija un fichero:
+      <input type="file" name="archivo2"><br>
+
+      <input type="checkbox" name="gender" value="feminine"> Mujer
+      <input type="checkbox" name="gender" value="masculine"> Hombre
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Enviar formulario 4">
+    <input type="reset" value="Borrar datos">
+
+  </form>
+</body>
+</html>
