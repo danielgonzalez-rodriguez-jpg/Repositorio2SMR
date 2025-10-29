@@ -6,11 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="text-align:center;">HOJA DE INSCRIPCIÓN</h1>
-  <h2 style="text-align:center;">EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2>
+    <center><h1>HOJA DE INSCRIPCIÓN</h1></center>
+    <center><h2>EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h2></center>
 
   <form action="#" method="post" enctype="multipart/form-data">
 
+    <!-- DATOS PERSONALES -->
     <fieldset style="background-color:#cccccc;">
       <legend><b>Datos Personales</b></legend>
 
@@ -19,7 +20,7 @@
       Apellidos:
       <input type="text" name="apellidos">
       DNI:
-      <input type="text" name="dni" readonly><!-- readonly añadido -->
+      <input type="text" name="dni" readonly>
       <br><br>
 
       Localidad de Nacimiento:
@@ -36,42 +37,53 @@
       Dirección:
       <input type="text" name="direccion" size="40">
       Código Postal:
-      <input type="text" name="postal" placeholder="Ej: 21004"><!-- placeholder añadido -->
-      <br><br>
+      <input type="text" name="postal" placeholder="Ej: 21004"><br><br>
 
-      <!-- Nuevo campo tipo week -->
       Semana de inscripción:
       <input type="week" name="semana"><br><br>
 
-      <!-- Nuevo campo tipo range -->
       Nivel de prioridad:<br>
+      <!-- Nuevo -->
       <input type="range" value="24" min="1" max="100" oninput="this.nextElementSibling.value = this.value">
       <output>24</output><br><br>
 
-      <!-- Campo disabled -->
       Comentarios (campo deshabilitado):
       <input type="text" disabled placeholder="No editable"><br>
     </fieldset>
 
     <br>
 
+    <!-- FORMA DE ACCESO -->
     <fieldset style="background-color:#e8b894;">
       <legend><b>Forma de Acceso</b></legend>
+
       <input type="radio" name="acceso" value="cupo1"> Cupo 1 (Bachillerato)<br>
+      &nbsp;&nbsp;&nbsp;<input type="radio" name="bachillerato" value="relacionado"> Bachillerato relacionado<br>
+      &nbsp;&nbsp;&nbsp;<input type="radio" name="bachillerato" value="no_relacionado"> Bachillerato no relacionado<br>
+      &nbsp;&nbsp;&nbsp;<input type="radio" name="bachillerato" value="otros"> Otros (especifique)
+      <input type="text" name="otros_especificar"><br><br>
+
       <input type="radio" name="acceso" value="cupo2"> Cupo 2 (Técnico)<br>
       <input type="radio" name="acceso" value="cupo3"> Cupo 3 (Prueba de acceso)<br>
     </fieldset>
 
     <br>
 
+    <!-- DOCUMENTOS ADJUNTADOS -->
     <fieldset style="background-color:#b68b8b;">
       <legend><b>Documentos Adjuntados</b></legend>
+
       <input type="checkbox" name="documentos" value="dni"> Fotocopia DNI
       <input type="checkbox" name="documentos" value="certificado"> Certificado Académico<br><br>
+
+      <input type="checkbox" name="documentos" value="otros"> Otros documentos (especifique)
+      <input type="text" name="otros_docs"><br><br>
+
       <input type="file" name="archivo">
     </fieldset>
 
     <br>
+
     <input type="submit" value="Enviar inscripción">
     <input type="reset" value="Borrar formulario">
 
