@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let documento;
+        let edad;
+        let sexo;
+
+        let totalPersonas = 0;
+        let totalVarones = 0;
+        let totalMujeres = 0;
+        let varones16a65 = 0;
+
+        do {
+            documento = parseInt(prompt("Ingrese número de documento (0 para finalizar):"));
+
+            if (documento !== 0) {
+                edad = parseInt(prompt("Ingrese edad:"));
+                sexo = prompt("Ingrese sexo ('masculino' o 'femenino'):").toLowerCase();
+
+                totalPersonas++;
+
+                if (sexo === "masculino") {
+                    totalVarones++;
+
+                    if (edad >= 16 && edad <= 65) {
+                         varones16a65++;
+                }
+
+                } else if (sexo === "femenino") {
+                    totalMujeres++;
+                }
+            }
+
+        } while (documento !== 0);
+
+        document.write("Cantidad total de personas censadas: " + totalPersonas + "<br>");
+        document.write("Cantidad de varones: " + totalVarones + "<br>");
+        document.write("Cantidad de mujeres: " + totalMujeres + "<br>");
+        document.write("Varones entre 16 y 65 años: " + varones16a65 + "<br>");
+    </script>
+</body>
+</html>

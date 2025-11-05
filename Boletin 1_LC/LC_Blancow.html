@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numeroCuenta;
+        let nombre;
+        let saldo;
+
+        do {
+            numeroCuenta = parseInt(prompt("Ingrese número de cuenta (negativo para finalizar):"));
+
+            if (numeroCuenta >= 0) {
+                nombre = prompt("Ingrese nombre del cliente:");
+                saldo = parseFloat(prompt("Ingrese saldo actual:"));
+
+                document.write("Número de cuenta: " + numeroCuenta + "<br>");
+                document.write("Cliente: " + nombre + "<br>");
+                document.write("Saldo: " + saldo + "<br>");
+
+                if (saldo > 0) {
+                    document.write("Estado: Acreedor<br><br>");
+                } else if (saldo < 0) {
+                    document.write("Estado: Deudor<br><br>");
+                } else {
+                    document.write("Estado: Nulo<br><br>");
+                }
+            }
+
+        } while (numeroCuenta >= 0);
+    </script>
+</body>
+</html>
