@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function mostrarRango(menor, mayor) {
+            if (menor > mayor) {
+                document.write("Error: el primer número debe ser menor que el segundo.");
+            } else {
+                for (let i = menor; i <= mayor; i++) {
+                    document.write(i + " ");
+                }
+            }
+        }
+        let numero1 = parseInt(prompt("Ingresa el número menor:"));
+        let numero2 = parseInt(prompt("Ingresa el número mayor:"));
+
+        mostrarRango(numero1, numero2);
+    </script>
+</body>
+</html>

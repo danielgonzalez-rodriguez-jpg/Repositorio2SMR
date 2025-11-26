@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function verificarLogin() {
+            let usuarioCorrecto = "dani";
+            let contrasenaCorrecta = "1234";
+
+            let usuario, contrasena;
+
+            while (true) {
+                usuario = prompt("Ingrese su nombre de usuario:");
+                contrasena = prompt("Ingrese su contraseña:");
+
+                if (usuario == usuarioCorrecto && contrasena == contrasenaCorrecta) {
+                    document.write("Acceso concedido.");
+                    break;
+                } else {
+                    document.write("Usuario o contraseña incorrectos. Intente nuevamente.<br><br>");
+                }
+            }
+        }
+
+        verificarLogin();
+    </script>
+</body>
+</html>
